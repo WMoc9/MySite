@@ -1,12 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WMoc9's site</title>
+
+    <link rel="stylesheet" href="css\Style.css" />
+    <link rel="stylesheet" href="css\normalize.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    />
+    <!-- Шрифт -->
   </head>
   <body>
-    jhgfjgh hrtytryhgjhgjghjjk
+    <!-- шапка -->
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <a href="#" class="nav-link favorite-page">Любимые места</a>
+          <a href="#" class="nav-link">Любимые книги</a>
+          <a href="#" class="nav-link test-page">Пробная страница</a>
+          <a href="#down" class="nav-link connect-page">Связаться со мной</a>
+        </nav>
+        <div class="wmoc9-icon">
+          <img class="WMoc9-avatar" src="img\WMoc9.jpg" alt="WMoc9 avatar" />
+          <span class="WMoc9">WMoc9</span>
+        </div>
+      </div>
+      <!-- /.header-container -->
+    </header>
+    <!-- Инфа обо мне -->
+    <h1 class="h1-tittle">Информация обо мне</h1>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-photo">
+          <h2 class="h2-photo">Моя фотокарточка</h2>
+          <img class="hero-img" src="img\гифка.gif" alt="WMoc9 gif" />
+          <span class="hero-text-sigma">Делаю сигма фейс</span>
+        </div>
+        <!-- /.hero-photo -->
+        <div class="hero-text">
+          <div class="text-facts">
+            <h2 class="facts">Факты обо мне</h2>
+            <ul class="facts-list">
+              <li>ФИО Моисеев Иван Сергеевич</li>
+              <li>Ник WMoc9</li>
+              <li>Живу в Щелково</li>
+              <li>Дата рождения 30.10.2002</li>
+              <li>Учусь в МГОТУ</li>
+            </ul>
+          </div>
+          <!-- /.text-facts -->
+          <div class="text-hobbies">
+            <h2 class="hobbies">Мои хобби</h2>
+            <ul class="hobbies-list">
+              <li>Rocket league</li>
+              <li>Программирование</li>
+            </ul>
+          </div>
+          <!-- /.text-hobbies -->
+        </div>
+      </div>
+      <!-- /.hero-container -->
+    </section>
+    <!-- друзья -->
+    <section class="friends">
+      <h2 class="h2-friends">Мои друзья</h2>
+      <div class="friends-container">
+        <div class="friend1">
+          <a href="https://vk.com/pulsplugg" target="_blank"
+            ><img class="friends-photo" src="img\Илья.jpg" alt="Илья Афанасьев"
+          /></a>
+          <p>PulsarOfHell</p>
+        </div>
+        <div class="friend2">
+          <a href="https://vk.com/wowa_hinhilla" target="_blank"
+            ><img class="friends-photo" src="img\мунз.jpg" alt="Владимир Мунзафаров"
+          /></a>
+          <p>Мунзафарик</p>
+        </div>
+        <div class="friend3">
+          <a href="https://vk.com/tixzet" target="_blank"
+            ><img class="friends-photo" src="img\илюха.jpg" alt="Илья Прокопив"
+          /></a>
+          <p>Илюха</p>
+        </div>
+        <div class="friend4">
+          <a href="https://vk.com/id202253341" target="_blank"
+            ><img class="friends-photo" src="img\макс.jpg" alt="Максим Панкратов"
+          /></a>
+          <p>Максончик</p>
+        </div>
+        <div class="friend5">
+          <a href="https://vk.com/kojanochka" target="_blank"
+            ><img class="friends-photo" src="img\шум.jpg" alt="Никита Шумейко"
+          /></a>
+          <p>Шум</p>
+        </div>
+      </div>
+      <!-- /.friends-container -->
+    </section>
+    <!-- блог -->
+    <section class="blog">
+      <h2 class="h2-blog">WMoc9's Блог</h2>
+      <div class="blog-container">
+        <div class="blog-article">
+          <p class="blog-news">
+            Я пришел сегодня в университет, очень усердно занимался учебой, продолжил
+            разработку своей НИР, которая посвещенна фреймворкам для разработки веб
+            приложений. Мне очень понравился этот день, поэтому я решил сделать
+            фотокарточку на память.
+          </p>
+          <img
+            class="photo-blog"
+            src="img\Blog-photo.jpg"
+            alt="Я сфотографировался на паре"
+          />
+        </div>
+        <!-- /.blog-article -->
+        <div class="form-button">
+          <script src="js\comment.js"></script>
+          <button class="button-mark" onclick="openForm()">Оценить пост</button>
+          <div class="form-popup" id="myForm">
+            <form class="form-comment" action="#" autocomplete="off" enctype="text/plain">
+              <fieldset class="fieldset-mark">
+                <label class="label-user-name" for="user-name">Введите ваше имя</label>
+                <input
+                  class="input-name"
+                  id="user-name"
+                  type="text"
+                  placeholder="Иван"
+                  required
+                />
+                <br />
+                <label class="label-ask-like" for="like">Вам понравился пост?</label>
+                <br />
+                <button class="mark-button">
+                  <img class="mark-img" src="img\like.png" alt="Лайк" />
+                </button>
+                <button class="mark-button">
+                  <img class="mark-img" src="img\dislike.png" alt="Дизлайк" />
+                </button>
+                <br />
+                <textarea
+                  class="comment-area"
+                  cols="20"
+                  rows="5"
+                  type="text"
+                  placeholder="Поле для комментариев"
+                ></textarea>
+                <br />
+                <button type="submit">Отправить</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                  Закрыть
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- /.form-popup -->
+        </div>
+        <!-- /.form-button -->
+      </div>
+      <!-- /.blog-container -->
+    </section>
+    <!-- подвал -->
+    <footer class="footer" id="down">
+      <h3 class="h3-footer">Связаться со мной</h3>
+      <div class="footer-container">
+        <a href="mailto:knigtpro@yandex.ru" target="_blank"
+          ><img class="footer-img" src="img\mail.png" alt="Ссылка на почту" />
+        </a>
+        <a href="https://vk.com/moiseyyy" target="_blank"
+          ><img class="footer-img" src="img\vk.png" alt="Ссылка на вк"
+        /></a>
+      </div>
+      <!-- /.footer-container -->
+    </footer>
+    <a href="#" class="to-top"><img class="arrow" src="img\arrow.png" alt="Кнопка наверх"> </arrow></a>
   </body>
 </html>

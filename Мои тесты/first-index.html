@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Моисеев Иван" />
+    <meta name="keywords" content="Личный сайт Ивана Моисеева" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WMoc9 Site</title>
+    <link rel="stylesheet" href="css\normalize.css" />
+    <link rel="stylesheet" href="css\Style-first.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-block">
+        <h1 id="nachalo" class="title-center">Личный сайт Ивана Моисеева</h1>
+        <nav>
+          <h2>Навигация по сайту</h2>
+          <ul>
+            <li><a href="place.html">Любимые места</a></li>
+            <li><a href="book.html">Любимые книги</a></li>
+            <li><a href="#contacts">Связаться со мной</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h2 class="h2-about-me">Обо мне</h2>
+      <div class="block-about-me">
+        <div class="block-me-photo">
+          <div class="tittle-kostyl">
+            <h3 class="h3-photo">Моя фотокарточка</h3>
+          </div>
+          <img class="me" src="img\гифка.gif" alt="Гифка с WMoc9" />
+          <p>Делаю сигма фейс</p>
+        </div>
+        <div class="block-me-info">
+          <h3 class="h3-info">Краткая информация обо мне</h3>
+          <ul>
+            <li>ФИО Моисеев Иван Сергеевич</li>
+            <li>Ник WMoc9</li>
+            <li>Живу в Щелково</li>
+            <li>Дата рождения 30.10.2002</li>
+            <li>Учусь в МГОТУ</li>
+          </ul>
+          <h3 class="h3-hobbies">Мои хобби</h3>
+          <ul>
+            <li>Rocket league</li>
+            <li>Программирование</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="h3-friends">Мои друзья</h3>
+      <div class="friends-block">
+        <div class="friend1">
+          <a href="https://vk.com/pulsplugg" target="_blank"
+            ><img class="friends-photo" src="img\Илья.jpg" alt="Илья Афанасьев"
+          /></a>
+          <p>PulsarOfHell</p>
+        </div>
+        <div class="friend2">
+          <a href="https://vk.com/wowa_hinhilla" target="_blank"
+            ><img class="friends-photo" src="img\мунз.jpg" alt="Владимир Мунзафаров"
+          /></a>
+          <p>Мунзафарик</p>
+        </div>
+        <div class="friend3">
+          <a href="https://vk.com/tixzet" target="_blank"
+            ><img class="friends-photo" src="img\илюха.jpg" alt="Илья Прокопив"
+          /></a>
+          <p>Илюха</p>
+        </div>
+        <div class="friend4">
+          <a href="https://vk.com/id202253341" target="_blank"
+            ><img class="friends-photo" src="img\макс.jpg" alt="Максим Панкратов"
+          /></a>
+          <p>Максончик</p>
+        </div>
+        <div class="friend5">
+          <a href="https://vk.com/kojanochka" target="_blank"
+            ><img class="friends-photo" src="img\шум.jpg" alt="Никита Шумейко"
+          /></a>
+          <p>Шум</p>
+        </div>
+      </div>
+      <h3 class="h3-blog">WMoc9's Блог</h3>
+      <article class="zapis">Я пришел сегодня в университет</article>
+      <form action="#" autocomplete="off" enctype="text/plain">
+        <fieldset class="fieldset-mark">
+          <legend class="legend-mark">Оценка поста</legend>
+          <label for="user-name">Введите ваше имя</label>
+          <input
+            class="input-name"
+            id="user-name"
+            type="text"
+            placeholder="Иван"
+            required
+          />
+          <br />
+          <label for="like">Вам понравился пост?</label><br />
+          <button class="mark-button">
+            <img class="mark-img" src="img\like.png" alt="Лайк" />
+          </button>
+          <button class="mark-button">
+            <img class="mark-img" src="img\dislike.png" alt="Дизлайк" />
+          </button>
+          <br />
+          <textarea
+            class="comment-area"
+            cols="20"
+            rows="5"
+            type="text"
+            placeholder="Поле для комментариев"
+          ></textarea>
+          <br />
+          <button type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer id="contacts">
+      <h4 class="h4-footer">Контактная информация</h4>
+      <ul>
+        <li>
+          <a href="mailto:knigtpro@yandex.ru" target="_blank"
+            ><img class="footer-img" src="img\mail.png" alt="Ссылка на почту" />
+          </a>
+        </li>
+        <li>
+          <a href="https://vk.com/moiseyyy" target="_blank"
+            ><img class="footer-img" src="img\vk.png" alt="Ссылка на вк"
+          /></a>
+        </li>
+        <li class="title-center"><a href="#nachalo">Наверх</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
